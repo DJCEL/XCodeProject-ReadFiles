@@ -1,6 +1,6 @@
 from pbxproj import XcodeProject
 #------------------------------
-def ReadXCodeProjectFiles(filepath:str):
+def ReadXcodeProjectFiles(filepath:str):
     # Load the Xcode project
     project = XcodeProject.load(filepath)
 
@@ -23,7 +23,7 @@ def ReadXCodeProjectFiles(filepath:str):
 #------------------------------
 def main():
     filepath = 'MyApp.xcodeproj/project.pbxproj'
-    ReadXCodeProjectFiles(filepath)
+    ReadXcodeProjectFiles(filepath)
 #------------------------------
 if __name__ == "__main__":
     main()
