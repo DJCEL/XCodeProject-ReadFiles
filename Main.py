@@ -18,6 +18,9 @@ def DecodeFiles():
         print(f"Source Tree  : {source_tree}")
         print(f"File Type    : {file_type}")
         print()
-
+#-------------------------------
 def main():
     DecodeFiles()
+#----------------------------------------------------------------------------------------------
+if __name__ == "__main__":
+    main()
