@@ -1,6 +1,6 @@
 from pbxproj import XcodeProject
 
-def DecodeFiles():
+def DecodeXCodeProjectFiles():
     # Load the Xcode project
     project = XcodeProject.load('MyApp.xcodeproj/project.pbxproj')
 
@@ -20,7 +20,7 @@ def DecodeFiles():
         print()
 #-------------------------------
 def main():
-    DecodeFiles()
+    DecodeXCodeProjectFiles()
 #----------------------------------------------------------------------------------------------
 if __name__ == "__main__":
     main()
