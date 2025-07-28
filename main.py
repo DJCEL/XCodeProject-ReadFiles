@@ -22,7 +22,7 @@ def ReadXcodeProjectFiles(filepath:str):
         print()
 #------------------------------
 def main():
-    filepath = 'MyApp.xcodeproj/project.pbxproj'
+    filepath = 'MyPlugin8.xcodeproj/project.pbxproj'
     ReadXcodeProjectFiles(filepath)
 #------------------------------
 if __name__ == "__main__":
