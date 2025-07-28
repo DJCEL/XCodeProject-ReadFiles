@@ -18,9 +18,9 @@ def DecodeXCodeProjectFiles():
         print(f"Source Tree  : {source_tree}")
         print(f"File Type    : {file_type}")
         print()
-#-------------------------------
+#------------------------------
 def main():
     DecodeXCodeProjectFiles()
-#----------------------------------------------------------------------------------------------
+#------------------------------
 if __name__ == "__main__":
     main()
