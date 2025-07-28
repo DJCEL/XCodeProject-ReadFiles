@@ -4,8 +4,10 @@ def DecodeXCodeProjectFiles(filepath:str):
     # Load the Xcode project
     project = XcodeProject.load(filepath)
 
+    files = project.objects.get_objects_in_section('PBXFileReference')
+    
     # Iterate over all PBXFileReference objects
-    for ref in project.objects.get_objects_in_section('PBXFileReference'):
+    for ref in files:
         uuid = ref.get_id()
         name = ref.get('name', '—')
         path = ref.get('path', '—')
