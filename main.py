@@ -17,7 +17,7 @@ def DecodeXCodeProjectFiles(filepath:str):
         print(f"Path         : {path}")
         print(f"Source Tree  : {source_tree}")
         print(f"File Type    : {file_type}")
-        
+        print()
 #------------------------------
 def main():
     filepath = 'MyApp.xcodeproj/project.pbxproj'
