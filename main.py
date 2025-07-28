@@ -1,8 +1,8 @@
 from pbxproj import XcodeProject
 
-def DecodeXCodeProjectFiles():
+def DecodeXCodeProjectFiles(name:str):
     # Load the Xcode project
-    project = XcodeProject.load('MyApp.xcodeproj/project.pbxproj')
+    project = XcodeProject.load(name)
 
     # Iterate over all PBXFileReference objects
     for ref in project.objects.get_objects_in_section('PBXFileReference'):
@@ -20,7 +20,8 @@ def DecodeXCodeProjectFiles():
         print()
 #------------------------------
 def main():
-    DecodeXCodeProjectFiles()
+    name = 'MyApp.xcodeproj/project.pbxproj'
+    DecodeXCodeProjectFiles(name)
 #------------------------------
 if __name__ == "__main__":
     main()
